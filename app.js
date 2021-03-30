@@ -68,7 +68,7 @@ addFactor.addEventListener("click", function add(e){
       input.max = "10"
       input.pattern = "\d*"
       input.classList.add("scores")
-      input.value = 0
+      input.value = ""
       rowsa[i].insertCell(rowsa[-1]).appendChild(input)
  
     };
