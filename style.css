@@ -19,6 +19,8 @@ i {
 
 #factorSection {
   display: none;
+  height: 30%;
+  font-size: 1em;
 }
 
 #calculateSection {
@@ -64,9 +66,10 @@ input:hover {
 
 .sec {
   background: lightblue;
-  height: 55%;
-  width: 90%;
+  max-height: 35%;
+  max-width: 90%;
   padding: 5px;
   margin: 5px;
   text-align: center;
+  font-size: 10px;
 }

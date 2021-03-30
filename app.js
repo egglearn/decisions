@@ -57,6 +57,8 @@ addFactor.addEventListener("click", function add(e){
      header.textContent = factor.value
     //  arr.push([factor.value,weight.value])
     arr.push(weight.value)
+
+    if(header.textContent != ""){
      first.appendChild(header)
      
      for(var i = 0 ; i < rowsa.length; i++){
@@ -72,6 +74,10 @@ addFactor.addEventListener("click", function add(e){
 
     factor.value = ""
     weight.value = ""
+}
+else{
+    alert("enter a factor")
+}
 })
 
 let myInputs = document.getElementsByClassName("scores")
