@@ -1,0 +1,71 @@
+body {
+  font-family: arial;
+}
+
+#cont {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+#winner {
+  font-size: 50px;
+  color: green;
+  font-weight: 300px;
+}
+
+i {
+  font-size: 15px;
+}
+
+#factorSection {
+  display: none;
+}
+
+#calculateSection {
+  display: none;
+}
+
+button {
+  margin: 10px;
+  background: orange;
+  font-weight: 300;
+}
+
+button:hover {
+  background: darkgoldenrod;
+}
+
+table,
+tr,
+th {
+  border: solid black 2px;
+}
+td {
+  padding: 15px;
+  border: solid 2px black;
+  text-align: center;
+}
+
+.scores {
+  width: 90%;
+}
+
+input {
+  width: 25%;
+  height: 30px;
+  box-shadow: 5px 5px 5px grey;
+  margin: 10px;
+}
+
+input:hover {
+  border-color: red solid 2px;
+}
+
+.sec {
+  background: lightblue;
+  height: 55%;
+  width: 100%;
+  padding: 5px;
+  margin: 5px;
+  text-align: center;
+}

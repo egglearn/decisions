@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>title</title>
+  </head>
+
+  </html>
+        <link rel="stylesheet" href="./style.css">
+    </head>
+    <body>
+    
+       
+        <div id ="cont">
+    
+        <form>
+            <div class="sec" id="choiceSection">
+            <label>Add Choice Option</label>
+            </br>
+            <input  id="choiceOption" type ="text" placeholder="enter your choice here"></input>
+            </br>
+            <button id="addChoice" type="button">Add Choices</button>
+            </br>
+            <button id="nextStepFactor">Next Step</button>
+            </div>
+            
+            <div class="sec" id="factorSection">
+            <label>
+                </br>
+                </br>
+                <i>Add a factor that is important for your decision, eg for buying a jumper, cost could be a factor, quality is another </i>
+                </br>
+                </br>
+                Add factors</label>
+            </br>
+            
+            <input id="factor" type ="text"></input>
+            </br>
+            <label>
+                </br>
+                <i>On a scale of 1 - 5,  what is the relative importance of this factor to the decision, eg if quality is very important choose 5. Then in the final step - when the calculation is made, a greater weighting will be applied to quality </i>
+                </br>
+            </br>
+                Add Weighting
+            </label>
+            </br>
+            <input type="number" id="weight" min="0" max="5">
+            </br>
+            <button id="addFactor" type="button">Add Factor</button>
+            </br>
+              <button id="nextStepCalculate">next Step </button>
+            </div>
+            
+            <div class="sec" id="calculateSection">
+            <label> Now enter the individual scores in the input boxes in the table, when you are finished,press calculate to find 
+                out what decision you should make based on you scores and weightings.
+            </br>
+                Calculate</label>
+            </br>
+            <button type="button" id="calculate">calculate</button>
+            </br>
+            <p id ="winner">....</p>
+            </div>
+          
+        </form>
+         
+        <table id="container">
+         <tr id="first">
+             <th>
+                 Choices
+            </th>
+        </tr>
+        </table>
+        </div>
+        <script src="./app.js"></script>
+    </body>
+</html>
