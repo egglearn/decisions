@@ -46,13 +46,14 @@ td {
   text-align: center;
 }
 
-.scores {
+scores {
   width: 90%;
 }
 
 input {
   width: 25%;
   height: 30px;
+  text-align: center;
   box-shadow: 5px 5px 5px grey;
   margin: 10px;
 }
