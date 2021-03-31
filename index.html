@@ -16,10 +16,24 @@
         <form>
             <div class="sec" id="choiceSection">
             <label> Stuck With A Decision?
-            </br> Add Your Potential Choices and Follow The Steps</label>
-            
             </br>
-            <input  id="choiceOption" type ="text" placeholder="enter your choice here"></input>
+            </br> View the preview table below, then start to buildy your own</label>
+        </br>
+            </br>
+             <div id="preview">
+                <table id="previewTable">
+                    <tbody><tr>
+                        <th>
+                            Choices
+                       </th>
+                   <th class="options">health <span class="w">weighting:3</span></th><th class="options">cost<span class="w">weighting:2</span></th><th class="options">convenience <span class="w">weighting:3</span></th></tr>
+                   </tbody><tr class="demoRow"><td>go to gym</td><td><input type="number" value="3" min="0" max="10" pattern="/*d" class="demo"></td><td><input type="number" value="2" min="0" max="10" pattern="/*d" class="demo"></td><td><input type="number" min="0" max="10" pattern="/*d" class="demo"></td></tr><tr class="demoRow"><td>stay at home</td><td><input type="number" value="5" min="0" max="10" pattern="/*d" class="demo"></td><td><input type="number" value="1" min="0" max="10" pattern="/*d" class="demo"></td><td><input type="number" min="0" max="10" pattern="/*d" class="demo"></td></tr></table>
+             </div>
+
+            </br>
+             <label id="start">  <span id="b"> START Building your own table by entering a choice in the input area below and clicking add choice </span></label>
+        </br>
+             <input  id="choiceOption" type ="text" placeholder="enter your choice here"></input>
             </br>
             <button id="addChoice" type="button">Add Choices</button>
             </br>
@@ -54,7 +68,7 @@
             </div>
             
             <div class="sec" id="calculateSection">
-            <label> Now enter the individual scores in the input boxes in the table, when you are finished,press calculate to find 
+            <label> Now enter the individual scores betweem 1 - 5  in the input boxes in the table, when you are finished,press calculate to find 
                 out what decision you should make based on you scores and weightings.
             </br>
                 Calculate</label>
@@ -78,3 +92,7 @@
         <script src="./app.js"></script>
     </body>
 </html>
+
+
+
+

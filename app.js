@@ -1,4 +1,5 @@
 let choices = document.getElementById("choiceOption")
+let previewTable = document.getElementById("previewTable")
 
 let container = document.getElementById("container")
 let addChoice = document.getElementById("addChoice")
@@ -31,10 +32,12 @@ nextStepCalculate.addEventListener("click",function nextCal (e){
 })
 
 
-
+let b = document.getElementById("b")
 
 addChoice.addEventListener("click", function go (e){
       e.preventDefault()
+      previewTable.style.display = "none"
+       b.textContent = "Add your choices by entering a choice into the input box and clicking add choice"
       let row = document.createElement("tr")
       row.classList.add("rows")
       let choice = document.createElement("td")
@@ -54,7 +57,7 @@ addFactor.addEventListener("click", function add(e){
      let rowsa = document.getElementsByClassName("rows")
      let header = document.createElement("th")
      header.classList.add("options")
-     header.textContent = factor.value
+     header.textContent = `${factor.value} weight:${weight.value}`
     //  arr.push([factor.value,weight.value])
     arr.push(weight.value)
 
@@ -66,7 +69,7 @@ addFactor.addEventListener("click", function add(e){
       input.type = "number"
       input.min = "0"
       input.max = "10"
-      input.pattern = "\d*"
+      input.pattern = "/*d"
       input.classList.add("scores")
       input.value = ""
       rowsa[i].insertCell(rowsa[-1]).appendChild(input)

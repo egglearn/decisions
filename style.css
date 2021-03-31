@@ -13,14 +13,34 @@ body {
   font-weight: 300px;
 }
 
+#previewTable {
+  background: white;
+  height: 20%;
+}
+
+.w {
+  font-size: 7px;
+}
+
+#b {
+  color: black;
+  background: lightgreen;
+  font-weight: 900;
+}
+
 i {
-  font-size: 15px;
+  font-size: 20px;
 }
 
 #factorSection {
   display: none;
   height: 30%;
   font-size: 1em;
+}
+
+#start {
+  font-weight: 700;
+  font-size: 10px;
 }
 
 #calculateSection {
