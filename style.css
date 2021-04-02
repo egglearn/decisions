@@ -1,5 +1,78 @@
 body {
   font-family: arial;
+  background: #f0f0f0;
+}
+
+#nav {
+  display: flex;
+}
+
+ul {
+  display: flex;
+  justify-content: space-between;
+  width: 500px;
+  margin: 0 auto;
+  list-style: none;
+  text-decoration: none;
+  color: white;
+  text-decoration: none;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+}
+
+.myActive {
+  background: darkblue;
+}
+
+#choiceNav,
+#factorNav,
+#calcNav {
+  color: white;
+}
+
+li {
+  background: grey;
+  border-radius: 20px;
+  padding: 10px;
+  text-decoration: none;
+}
+
+#intro {
+  text-align: center;
+  margin: 10px;
+}
+#preview {
+  text-align: center;
+}
+
+#previewTable {
+  background: white;
+  height: 20%;
+  margin: 10px auto;
+}
+
+#choiceLabel,
+#weightingLabel,
+#factorLabel {
+  font-weight: bold;
+}
+
+#choiceSection {
+  display: none;
+}
+
+.sec {
+  max-height: 35%;
+  background: white;
+  max-width: 90%;
+  padding: 5px;
+  margin: 0 auto;
+  text-align: center;
+  font-size: 1em;
 }
 
 #cont {
@@ -13,18 +86,12 @@ body {
   font-weight: 300px;
 }
 
-#previewTable {
-  background: white;
-  height: 20%;
-}
-
 .w {
   font-size: 7px;
 }
 
 #b {
   color: black;
-  background: lightgreen;
   font-weight: 900;
 }
 
@@ -34,7 +101,6 @@ i {
 
 #factorSection {
   display: none;
-  height: 30%;
   font-size: 1em;
 }
 
@@ -58,6 +124,14 @@ button:hover {
   background: darkgoldenrod;
 }
 
+#tableContainer {
+  text-align: center;
+  margin: 0 auto;
+  display: none;
+  max-width: 90%;
+  padding: 5px;
+}
+
 table,
 tr,
 th {
@@ -69,12 +143,17 @@ td {
   text-align: center;
 }
 
-scores {
-  width: 90%;
+#star {
+  display: inline-block;
+  padding: 15px 30px;
+  width: 70%;
+  background: orange;
+  color: white;
+  margin: 0 auto;
 }
 
 input {
-  width: 25%;
+  width: 70%;
   height: 30px;
   text-align: center;
   box-shadow: 5px 5px 5px grey;
@@ -83,14 +162,4 @@ input {
 
 input:hover {
   border-color: red solid 2px;
-}
-
-.sec {
-  background: lightblue;
-  max-height: 35%;
-  max-width: 90%;
-  padding: 5px;
-  margin: 5px;
-  text-align: center;
-  font-size: 10px;
 }
