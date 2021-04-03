@@ -27,8 +27,11 @@ let previewNav = document.getElementById("prevNav");
 let calcNav = document.getElementById("calcNav");
 let choiceNav = document.getElementById("choiceNav");
 let factorNav = document.getElementById("factorNav");
+let choiceText = document.getElementById("choiceText");
+let previewText = document.getElementById("previewText");
 start.addEventListener("click", function () {
   console.log(previewNav);
+  previewText.textContent = "";
   previewNav.classList.remove("myActive");
   choiceNav.classList.add("myActive");
   preview.style.display = "none";
@@ -43,6 +46,7 @@ addChoice.addEventListener("click", function go(e) {
 
   b.textContent =
     "Add your choices by entering a choice into the input box and clicking add choice";
+  previewText.style.display = "none";
   let row = document.createElement("tr");
   row.classList.add("rows");
   let choice = document.createElement("td");
@@ -57,6 +61,8 @@ nextStepFactor.addEventListener("click", function next(e) {
   e.preventDefault();
   choiceSection.style.display = "none";
   factorSection.style.display = "block";
+  b.textContent = "";
+  choiceText.style.display = "none";
   choiceNav.classList.remove("myActive");
   factorNav.classList.add("myActive");
 });
