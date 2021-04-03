@@ -29,6 +29,7 @@ let choiceNav = document.getElementById("choiceNav");
 let factorNav = document.getElementById("factorNav");
 let choiceText = document.getElementById("choiceText");
 let previewText = document.getElementById("previewText");
+let head = document.getElementById("head");
 start.addEventListener("click", function () {
   console.log(previewNav);
   previewText.textContent = "";
@@ -37,6 +38,7 @@ start.addEventListener("click", function () {
   preview.style.display = "none";
   start.style.display = "none";
   choiceSection.style.display = "block";
+  head.style.display = "none";
 });
 
 addChoice.addEventListener("click", function go(e) {
