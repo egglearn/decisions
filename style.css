@@ -169,9 +169,14 @@ th {
   border: solid black 2px;
 }
 td {
-  padding: 15px;
+  padding: 10px;
   border: solid 2px black;
   text-align: center;
+}
+
+td input {
+  margin: 0 auto;
+  box-shadow: 5px 5px 5px grey;
 }
 
 #star {
