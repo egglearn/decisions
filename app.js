@@ -59,12 +59,12 @@ addChoice.addEventListener("click", function go(e) {
 
 nextStepFactor.addEventListener("click", function next(e) {
   e.preventDefault();
+  choiceNav.classList.remove("myActive");
+  factorNav.classList.add("myActive");
   choiceSection.style.display = "none";
   factorSection.style.display = "block";
   b.textContent = "";
   choiceText.style.display = "none";
-  choiceNav.classList.remove("myActive");
-  factorNav.classList.add("myActive");
 });
 
 addFactor.addEventListener("click", function add(e) {
