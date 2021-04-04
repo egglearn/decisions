@@ -30,6 +30,7 @@ let factorNav = document.getElementById("factorNav");
 let choiceText = document.getElementById("choiceText");
 let previewText = document.getElementById("previewText");
 let head = document.getElementById("head");
+let choiceLabel = document.getElementById("choiceLabel");
 start.addEventListener("click", function () {
   console.log(previewNav);
   previewText.textContent = "";
@@ -52,6 +53,7 @@ addChoice.addEventListener("click", function go(e) {
   let row = document.createElement("tr");
   row.classList.add("rows");
   let choice = document.createElement("td");
+  choiceLabel.textContent = "Add Another Choice";
   choice.textContent = choices.value;
   choicesList.push(choice.textContent);
   container.appendChild(row);
