@@ -1,7 +1,7 @@
-#Rational Decision Maker Tool
+# Rational Decision Maker Tool
 
 
-##Project Overview
+## Project Overview
 A tool to help you make rational decisions by considering the
 different factors for the decision and applied weights to each
 factor. I used to write these tables out by hand and thought why
